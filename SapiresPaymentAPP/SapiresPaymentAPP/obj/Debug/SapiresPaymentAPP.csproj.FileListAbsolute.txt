@@ -1,0 +1,12 @@
+E:\PayableAccount\SapiresPaymentAPP\SapiresPaymentAPP\bin\Debug\SapiresPaymentAPP.exe.config
+E:\PayableAccount\SapiresPaymentAPP\SapiresPaymentAPP\bin\Debug\SapiresPaymentAPP.exe
+E:\PayableAccount\SapiresPaymentAPP\SapiresPaymentAPP\bin\Debug\SapiresPaymentAPP.pdb
+E:\PayableAccount\SapiresPaymentAPP\SapiresPaymentAPP\obj\Debug\SapiresPaymentAPP.csproj.AssemblyReference.cache
+E:\PayableAccount\SapiresPaymentAPP\SapiresPaymentAPP\obj\Debug\SapiresPaymentAPP.Form1.resources
+E:\PayableAccount\SapiresPaymentAPP\SapiresPaymentAPP\obj\Debug\SapiresPaymentAPP.Pay.resources
+E:\PayableAccount\SapiresPaymentAPP\SapiresPaymentAPP\obj\Debug\SapiresPaymentAPP.Properties.Resources.resources
+E:\PayableAccount\SapiresPaymentAPP\SapiresPaymentAPP\obj\Debug\SapiresPaymentAPP.csproj.GenerateResource.cache
+E:\PayableAccount\SapiresPaymentAPP\SapiresPaymentAPP\obj\Debug\SapiresPaymentAPP.csproj.CoreCompileInputs.cache
+E:\PayableAccount\SapiresPaymentAPP\SapiresPaymentAPP\obj\Debug\SapiresPaymentAPP.exe
+E:\PayableAccount\SapiresPaymentAPP\SapiresPaymentAPP\obj\Debug\SapiresPaymentAPP.pdb
+E:\PayableAccount\SapiresPaymentAPP\SapiresPaymentAPP\obj\Debug\SapiresPaymentAPP.SettingsWindow.resources
