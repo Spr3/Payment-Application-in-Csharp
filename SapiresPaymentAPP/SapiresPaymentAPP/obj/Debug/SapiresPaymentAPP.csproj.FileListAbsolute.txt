@@ -10,3 +10,15 @@ E:\PayableAccount\SapiresPaymentAPP\SapiresPaymentAPP\obj\Debug\SapiresPaymentAP
 E:\PayableAccount\SapiresPaymentAPP\SapiresPaymentAPP\obj\Debug\SapiresPaymentAPP.exe
 E:\PayableAccount\SapiresPaymentAPP\SapiresPaymentAPP\obj\Debug\SapiresPaymentAPP.pdb
 E:\PayableAccount\SapiresPaymentAPP\SapiresPaymentAPP\obj\Debug\SapiresPaymentAPP.SettingsWindow.resources
+C:\Users\Administrator\Downloads\Payment-Application-in-Csharp-main\SapiresPaymentAPP\SapiresPaymentAPP\bin\Debug\SapiresPaymentAPP.exe.config
+C:\Users\Administrator\Downloads\Payment-Application-in-Csharp-main\SapiresPaymentAPP\SapiresPaymentAPP\bin\Debug\SapiresPaymentAPP.exe
+C:\Users\Administrator\Downloads\Payment-Application-in-Csharp-main\SapiresPaymentAPP\SapiresPaymentAPP\bin\Debug\SapiresPaymentAPP.pdb
+C:\Users\Administrator\Downloads\Payment-Application-in-Csharp-main\SapiresPaymentAPP\SapiresPaymentAPP\obj\Debug\SapiresPaymentAPP.csproj.AssemblyReference.cache
+C:\Users\Administrator\Downloads\Payment-Application-in-Csharp-main\SapiresPaymentAPP\SapiresPaymentAPP\obj\Debug\SapiresPaymentAPP.Form1.resources
+C:\Users\Administrator\Downloads\Payment-Application-in-Csharp-main\SapiresPaymentAPP\SapiresPaymentAPP\obj\Debug\SapiresPaymentAPP.Pay.resources
+C:\Users\Administrator\Downloads\Payment-Application-in-Csharp-main\SapiresPaymentAPP\SapiresPaymentAPP\obj\Debug\SapiresPaymentAPP.Properties.Resources.resources
+C:\Users\Administrator\Downloads\Payment-Application-in-Csharp-main\SapiresPaymentAPP\SapiresPaymentAPP\obj\Debug\SapiresPaymentAPP.SettingsWindow.resources
+C:\Users\Administrator\Downloads\Payment-Application-in-Csharp-main\SapiresPaymentAPP\SapiresPaymentAPP\obj\Debug\SapiresPaymentAPP.csproj.GenerateResource.cache
+C:\Users\Administrator\Downloads\Payment-Application-in-Csharp-main\SapiresPaymentAPP\SapiresPaymentAPP\obj\Debug\SapiresPaymentAPP.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\Payment-Application-in-Csharp-main\SapiresPaymentAPP\SapiresPaymentAPP\obj\Debug\SapiresPaymentAPP.exe
+C:\Users\Administrator\Downloads\Payment-Application-in-Csharp-main\SapiresPaymentAPP\SapiresPaymentAPP\obj\Debug\SapiresPaymentAPP.pdb

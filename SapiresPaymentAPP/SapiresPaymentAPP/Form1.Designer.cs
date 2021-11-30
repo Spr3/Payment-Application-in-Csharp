@@ -86,6 +86,20 @@ namespace SapiresPaymentAPP
             this.AddCompanyLabel = new System.Windows.Forms.Label();
             this.AddCompanyName = new System.Windows.Forms.TextBox();
             this.AddCompanysLabel = new System.Windows.Forms.Label();
+            this.BackButtonOnPayed = new System.Windows.Forms.Button();
+            this.DateAndTime4 = new System.Windows.Forms.Label();
+            this.AmountPayed4 = new System.Windows.Forms.Label();
+            this.Companypayed4 = new System.Windows.Forms.Label();
+            this.DateAndTime3 = new System.Windows.Forms.Label();
+            this.AmountPayed3 = new System.Windows.Forms.Label();
+            this.Companypayed3 = new System.Windows.Forms.Label();
+            this.DateAndTime2 = new System.Windows.Forms.Label();
+            this.AmountPayed2 = new System.Windows.Forms.Label();
+            this.Companypayed2 = new System.Windows.Forms.Label();
+            this.DateAndTime1 = new System.Windows.Forms.Label();
+            this.AmountPayed1 = new System.Windows.Forms.Label();
+            this.Companypayed1 = new System.Windows.Forms.Label();
+            this.Past4Payements = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -128,6 +142,7 @@ namespace SapiresPaymentAPP
             this.button1.TabIndex = 3;
             this.button1.Text = "✓";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -439,7 +454,7 @@ namespace SapiresPaymentAPP
             // 
             this.DarkMode.AutoSize = true;
             this.DarkMode.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DarkMode.Location = new System.Drawing.Point(25, 68);
+            this.DarkMode.Location = new System.Drawing.Point(29, 64);
             this.DarkMode.Name = "DarkMode";
             this.DarkMode.Size = new System.Drawing.Size(97, 23);
             this.DarkMode.TabIndex = 34;
@@ -687,11 +702,180 @@ namespace SapiresPaymentAPP
             this.AddCompanysLabel.Text = "Add Companys";
             this.AddCompanysLabel.Visible = false;
             // 
+            // BackButtonOnPayed
+            // 
+            this.BackButtonOnPayed.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackButtonOnPayed.Location = new System.Drawing.Point(137, 287);
+            this.BackButtonOnPayed.Name = "BackButtonOnPayed";
+            this.BackButtonOnPayed.Size = new System.Drawing.Size(65, 34);
+            this.BackButtonOnPayed.TabIndex = 70;
+            this.BackButtonOnPayed.Text = "Back";
+            this.BackButtonOnPayed.UseVisualStyleBackColor = true;
+            this.BackButtonOnPayed.Visible = false;
+            this.BackButtonOnPayed.Click += new System.EventHandler(this.BackButtonOnPayed_Click);
+            // 
+            // DateAndTime4
+            // 
+            this.DateAndTime4.AutoSize = true;
+            this.DateAndTime4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateAndTime4.Location = new System.Drawing.Point(3, 296);
+            this.DateAndTime4.Name = "DateAndTime4";
+            this.DateAndTime4.Size = new System.Drawing.Size(60, 21);
+            this.DateAndTime4.TabIndex = 69;
+            this.DateAndTime4.Text = "Payed:";
+            this.DateAndTime4.Visible = false;
+            // 
+            // AmountPayed4
+            // 
+            this.AmountPayed4.AutoSize = true;
+            this.AmountPayed4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AmountPayed4.Location = new System.Drawing.Point(3, 275);
+            this.AmountPayed4.Name = "AmountPayed4";
+            this.AmountPayed4.Size = new System.Drawing.Size(55, 21);
+            this.AmountPayed4.TabIndex = 68;
+            this.AmountPayed4.Text = "label8";
+            this.AmountPayed4.Visible = false;
+            // 
+            // Companypayed4
+            // 
+            this.Companypayed4.AutoSize = true;
+            this.Companypayed4.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Companypayed4.Location = new System.Drawing.Point(3, 256);
+            this.Companypayed4.Name = "Companypayed4";
+            this.Companypayed4.Size = new System.Drawing.Size(109, 19);
+            this.Companypayed4.TabIndex = 67;
+            this.Companypayed4.Text = "Company Name";
+            this.Companypayed4.Visible = false;
+            // 
+            // DateAndTime3
+            // 
+            this.DateAndTime3.AutoSize = true;
+            this.DateAndTime3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateAndTime3.Location = new System.Drawing.Point(3, 226);
+            this.DateAndTime3.Name = "DateAndTime3";
+            this.DateAndTime3.Size = new System.Drawing.Size(60, 21);
+            this.DateAndTime3.TabIndex = 66;
+            this.DateAndTime3.Text = "Payed:";
+            this.DateAndTime3.Visible = false;
+            // 
+            // AmountPayed3
+            // 
+            this.AmountPayed3.AutoSize = true;
+            this.AmountPayed3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AmountPayed3.Location = new System.Drawing.Point(3, 205);
+            this.AmountPayed3.Name = "AmountPayed3";
+            this.AmountPayed3.Size = new System.Drawing.Size(55, 21);
+            this.AmountPayed3.TabIndex = 65;
+            this.AmountPayed3.Text = "label5";
+            this.AmountPayed3.Visible = false;
+            // 
+            // Companypayed3
+            // 
+            this.Companypayed3.AutoSize = true;
+            this.Companypayed3.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Companypayed3.Location = new System.Drawing.Point(3, 186);
+            this.Companypayed3.Name = "Companypayed3";
+            this.Companypayed3.Size = new System.Drawing.Size(109, 19);
+            this.Companypayed3.TabIndex = 64;
+            this.Companypayed3.Text = "Company Name";
+            this.Companypayed3.Visible = false;
+            // 
+            // DateAndTime2
+            // 
+            this.DateAndTime2.AutoSize = true;
+            this.DateAndTime2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateAndTime2.Location = new System.Drawing.Point(3, 150);
+            this.DateAndTime2.Name = "DateAndTime2";
+            this.DateAndTime2.Size = new System.Drawing.Size(60, 21);
+            this.DateAndTime2.TabIndex = 63;
+            this.DateAndTime2.Text = "Payed:";
+            this.DateAndTime2.Visible = false;
+            // 
+            // AmountPayed2
+            // 
+            this.AmountPayed2.AutoSize = true;
+            this.AmountPayed2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AmountPayed2.Location = new System.Drawing.Point(3, 129);
+            this.AmountPayed2.Name = "AmountPayed2";
+            this.AmountPayed2.Size = new System.Drawing.Size(55, 21);
+            this.AmountPayed2.TabIndex = 62;
+            this.AmountPayed2.Text = "label2";
+            this.AmountPayed2.Visible = false;
+            // 
+            // Companypayed2
+            // 
+            this.Companypayed2.AutoSize = true;
+            this.Companypayed2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Companypayed2.Location = new System.Drawing.Point(3, 110);
+            this.Companypayed2.Name = "Companypayed2";
+            this.Companypayed2.Size = new System.Drawing.Size(109, 19);
+            this.Companypayed2.TabIndex = 61;
+            this.Companypayed2.Text = "Company Name";
+            this.Companypayed2.Visible = false;
+            // 
+            // DateAndTime1
+            // 
+            this.DateAndTime1.AutoSize = true;
+            this.DateAndTime1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateAndTime1.Location = new System.Drawing.Point(3, 76);
+            this.DateAndTime1.Name = "DateAndTime1";
+            this.DateAndTime1.Size = new System.Drawing.Size(60, 21);
+            this.DateAndTime1.TabIndex = 60;
+            this.DateAndTime1.Text = "Payed:";
+            this.DateAndTime1.Visible = false;
+            // 
+            // AmountPayed1
+            // 
+            this.AmountPayed1.AutoSize = true;
+            this.AmountPayed1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AmountPayed1.Location = new System.Drawing.Point(3, 55);
+            this.AmountPayed1.Name = "AmountPayed1";
+            this.AmountPayed1.Size = new System.Drawing.Size(118, 21);
+            this.AmountPayed1.TabIndex = 59;
+            this.AmountPayed1.Text = "AmountPayed";
+            this.AmountPayed1.Visible = false;
+            // 
+            // Companypayed1
+            // 
+            this.Companypayed1.AutoSize = true;
+            this.Companypayed1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Companypayed1.Location = new System.Drawing.Point(3, 36);
+            this.Companypayed1.Name = "Companypayed1";
+            this.Companypayed1.Size = new System.Drawing.Size(109, 19);
+            this.Companypayed1.TabIndex = 58;
+            this.Companypayed1.Text = "Company Name";
+            this.Companypayed1.Visible = false;
+            // 
+            // Past4Payements
+            // 
+            this.Past4Payements.AutoSize = true;
+            this.Past4Payements.Font = new System.Drawing.Font("Microsoft YaHei", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Past4Payements.Location = new System.Drawing.Point(1, -3);
+            this.Past4Payements.Name = "Past4Payements";
+            this.Past4Payements.Size = new System.Drawing.Size(204, 31);
+            this.Past4Payements.TabIndex = 57;
+            this.Past4Payements.Text = "Past 4 Payments";
+            this.Past4Payements.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(206, 319);
+            this.Controls.Add(this.BackButtonOnPayed);
+            this.Controls.Add(this.DateAndTime4);
+            this.Controls.Add(this.AmountPayed4);
+            this.Controls.Add(this.Companypayed4);
+            this.Controls.Add(this.DateAndTime3);
+            this.Controls.Add(this.AmountPayed3);
+            this.Controls.Add(this.Companypayed3);
+            this.Controls.Add(this.DateAndTime2);
+            this.Controls.Add(this.AmountPayed2);
+            this.Controls.Add(this.Companypayed2);
+            this.Controls.Add(this.DateAndTime1);
+            this.Controls.Add(this.AmountPayed1);
+            this.Controls.Add(this.Companypayed1);
+            this.Controls.Add(this.Past4Payements);
             this.Controls.Add(this.FinishButtonAdd);
             this.Controls.Add(this.HowOftenNeededPayedLabel);
             this.Controls.Add(this.DasPayed);
@@ -816,6 +1000,20 @@ namespace SapiresPaymentAPP
         private System.Windows.Forms.Label AddCompanyLabel;
         private System.Windows.Forms.TextBox AddCompanyName;
         private System.Windows.Forms.Label AddCompanysLabel;
+        private System.Windows.Forms.Button BackButtonOnPayed;
+        private System.Windows.Forms.Label DateAndTime4;
+        private System.Windows.Forms.Label AmountPayed4;
+        private System.Windows.Forms.Label Companypayed4;
+        private System.Windows.Forms.Label DateAndTime3;
+        private System.Windows.Forms.Label AmountPayed3;
+        private System.Windows.Forms.Label Companypayed3;
+        private System.Windows.Forms.Label DateAndTime2;
+        private System.Windows.Forms.Label AmountPayed2;
+        private System.Windows.Forms.Label Companypayed2;
+        private System.Windows.Forms.Label DateAndTime1;
+        private System.Windows.Forms.Label AmountPayed1;
+        private System.Windows.Forms.Label Companypayed1;
+        private System.Windows.Forms.Label Past4Payements;
     }
 }
 

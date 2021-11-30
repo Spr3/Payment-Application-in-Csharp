@@ -26,6 +26,13 @@ namespace SapiresPaymentAPP
             { 6, new Employee {Name="Garbage", Price=15.00, Date = "04/02/32"}},
             { 7, new Employee {Name="Water", Price=105.00, Date = "04/06/32"}},
             { 8, new Employee {Name=" ", Price=0.00, Date = " "}},
+            { 9, new Employee {Name=" ", Price=0.00, Date = " "}},
+            { 10, new Employee {Name=" ", Price=0.00, Date = " "}},
+            { 11, new Employee {Name=" ", Price=0.00, Date = " "}},
+            { 12, new Employee {Name=" ", Price=0.00, Date = " "}},
+            { 13, new Employee {Name=" ", Price=0.00, Date = " "}},
+            { 14, new Employee {Name=" ", Price=0.00, Date = " "}},
+            { 15, new Employee {Name=" ", Price=0.00, Date = " "}}
         };
         Dictionary<int, Employee> lastFew = new Dictionary<int, Employee>()
         {
@@ -37,6 +44,13 @@ namespace SapiresPaymentAPP
             { 6, new Employee {Name=" ", Price=0.0, Date = " "}},
             { 7, new Employee {Name=" ", Price=0.0, Date = " "}},
             { 8, new Employee {Name=" ", Price=0.00, Date = " "}},
+            { 9, new Employee {Name=" ", Price=0.00, Date = " "}},
+            { 10, new Employee {Name=" ", Price=0.00, Date = " "}},
+            { 11, new Employee {Name=" ", Price=0.00, Date = " "}},
+            { 12, new Employee {Name=" ", Price=0.00, Date = " "}},
+            { 13, new Employee {Name=" ", Price=0.00, Date = " "}},
+            { 14, new Employee {Name=" ", Price=0.00, Date = " "}},
+            { 15, new Employee {Name=" ", Price=0.00, Date = " "}}
         };
         public Form1()
         {
@@ -53,12 +67,10 @@ namespace SapiresPaymentAPP
             PaymentCompany5.Text = "Price:" + dictionaryCompanys[5].Price + "$ Due: " + dictionaryCompanys[5].Date;
             LoadPeopleList();
         }
-
         private void LoadPeopleList()
         {
             companypaying.Add(new PayCompanys { company = "Best Buy",amountpay=3, StartingDate="01/23/2021", howoftenneddedpayed = 2});
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             label1.Visible = false;
@@ -95,7 +107,6 @@ namespace SapiresPaymentAPP
             CardNumberTextBox.Visible = true;
             label5.Visible = true;
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -106,7 +117,6 @@ namespace SapiresPaymentAPP
             public double Price { get; set; }
             public string Date { get; set; }
         }
-
         private void Errorbutton_Click(object sender, EventArgs e)
         {
             bool trueorfalse = true;
@@ -129,7 +139,6 @@ namespace SapiresPaymentAPP
             SaveButton.Visible = true;
             button1.Visible = false;
         }
-
         private void SaveButton_Click(object sender, EventArgs e)
         {
             bool notdone = false;
@@ -388,7 +397,6 @@ namespace SapiresPaymentAPP
                 label5.Visible = false;
             }
         }
-
         private void PayCompany3_Click(object sender, EventArgs e)
         {
             CompanyName.Text = CompanyName3.Text;
@@ -425,7 +433,6 @@ namespace SapiresPaymentAPP
             AmountPay.Visible = true;
             PayTextBox.Visible = true;
         }
-
         private void GoBackButton_Click(object sender, EventArgs e)
         {
             label1.Visible = true;
@@ -466,6 +473,23 @@ namespace SapiresPaymentAPP
         {
             string Payment = "";
             bool FoundNumber = false;
+            //works on last payed
+            for (int count = 1; count < dictionaryCompanys.Count; count++)
+            {
+                if (dictionaryCompanys[count].Name == CompanyName.Text)
+                {
+                    for (int i = 15; i > 1; i--)
+                    {
+                        lastFew[i].Name = lastFew[i - 1].Name;
+                        lastFew[i].Price = lastFew[i - 1].Price;
+                        lastFew[i].Date = lastFew[i - 1].Date;
+                    }
+                    lastFew[1].Name = dictionaryCompanys[count].Name;
+                    lastFew[1].Price = dictionaryCompanys[count].Price/10;
+                    lastFew[1].Date = dictionaryCompanys[count].Date;
+                    break;
+                }
+            }
             foreach (char letter in PriceLabel.Text)
             {
                 if (letter.ToString() == ":")
@@ -538,6 +562,23 @@ namespace SapiresPaymentAPP
                     Payment = Payment + letter;
                 }
             }
+            //works on last payed
+            for (int count = 1; count < dictionaryCompanys.Count; count++)
+            {
+                if (dictionaryCompanys[count].Name == CompanyName.Text)
+                {
+                    for (int i = 15; i > 1; i--)
+                    {
+                        lastFew[i].Name = lastFew[i - 1].Name;
+                        lastFew[i].Price = lastFew[i - 1].Price;
+                        lastFew[i].Date = lastFew[i - 1].Date;
+                    }
+                    lastFew[1].Name = dictionaryCompanys[count].Name;
+                    lastFew[1].Price = dictionaryCompanys[count].Price/4;
+                    lastFew[1].Date = dictionaryCompanys[count].Date;
+                    break;
+                }
+            }
             for (int count = 1; count < dictionaryCompanys.Count; count++)
             {
                 if (dictionaryCompanys[count].Name == CompanyName.Text)
@@ -599,6 +640,23 @@ namespace SapiresPaymentAPP
                     Payment = Payment + letter;
                 }
             }
+            //works on last payed
+            for (int count = 1; count < dictionaryCompanys.Count; count++)
+            {
+                if (dictionaryCompanys[count].Name == CompanyName.Text)
+                {
+                    for (int i = 15; i > 1; i--)
+                    {
+                        lastFew[i].Name = lastFew[i - 1].Name;
+                        lastFew[i].Price = lastFew[i - 1].Price;
+                        lastFew[i].Date = lastFew[i - 1].Date;
+                    }
+                    lastFew[1].Name = dictionaryCompanys[count].Name;
+                    lastFew[1].Price = dictionaryCompanys[count].Price/2;
+                    lastFew[1].Date = dictionaryCompanys[count].Date;
+                    break;
+                }
+            }
             for (int count = 1; count < dictionaryCompanys.Count; count++)
             {
                 if (dictionaryCompanys[count].Name == CompanyName.Text)
@@ -658,6 +716,23 @@ namespace SapiresPaymentAPP
                 else if (FoundNumber == true)
                 {
                     Payment = Payment + letter;
+                }
+            }
+            //works on last payed
+            for (int count = 1; count < dictionaryCompanys.Count; count++)
+            {
+                if (dictionaryCompanys[count].Name == CompanyName.Text)
+                {
+                    for (int i = 15; i > 1; i--)
+                    {
+                        lastFew[i].Name = lastFew[i - 1].Name;
+                        lastFew[i].Price = lastFew[i - 1].Price;
+                        lastFew[i].Date = lastFew[i - 1].Date;
+                    }
+                    lastFew[1].Name = dictionaryCompanys[count].Name;
+                    lastFew[1].Price = dictionaryCompanys[count].Price;
+                    lastFew[1].Date = dictionaryCompanys[count].Date;
+                    break;
                 }
             }
             //this finds the ID in the disctionary it is in
@@ -908,11 +983,12 @@ namespace SapiresPaymentAPP
         {
             for (int count = 1; count < dictionaryCompanys.Count; count++)
             {
-                if(dictionaryCompanys[count].Name == "")
+                if (string.IsNullOrWhiteSpace(dictionaryCompanys[count].Name))
                 {
                     dictionaryCompanys[count].Name = AddCompanyName.Text;
-                    dictionaryCompanys[count].Price = Convert.ToDouble(AddPaymentTextBox.Text);
+                    dictionaryCompanys[count].Price = Int32.Parse(AddPaymentTextBox.Text);
                     dictionaryCompanys[count].Date = Date.Text;
+                    break;
                 }
             }
             label1.Visible = true;
@@ -945,8 +1021,17 @@ namespace SapiresPaymentAPP
             Date.Visible = false;
             DasPayed.Visible = false;
             AddCompanyName.Visible = false;
+            CompanyName1.Text = dictionaryCompanys[1].Name;
+            CompanyName2.Text = dictionaryCompanys[2].Name;
+            CompanyName3.Text = dictionaryCompanys[3].Name;
+            Company4.Text = dictionaryCompanys[4].Name;
+            Company5.Text = dictionaryCompanys[5].Name;
+            PaymentCompany1.Text = "Price:" + dictionaryCompanys[1].Price + "$ Due: " + dictionaryCompanys[1].Date;
+            PaymentCompany2.Text = "Price:" + dictionaryCompanys[2].Price + "$ Due: " + dictionaryCompanys[2].Date;
+            PaymentDue3.Text = "Price:" + dictionaryCompanys[3].Price + "$ Due: " + dictionaryCompanys[3].Date;
+            PaymentCompany4.Text = "Price:" + dictionaryCompanys[4].Price + "$ Due: " + dictionaryCompanys[4].Date;
+            PaymentCompany5.Text = "Price:" + dictionaryCompanys[5].Price + "$ Due: " + dictionaryCompanys[5].Date;
         }
-
         private void PayTextBox_Click(object sender, EventArgs e)
         {
             string Payment = "";
@@ -1032,6 +1117,92 @@ namespace SapiresPaymentAPP
             AmountPay.Visible = false;
             PayTextBox.Visible = false;
             CompanyName.Visible = false;
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            label1.Visible = false;
+            HelloLabel.Visible = false;
+            button2.Visible = false;
+            button1.Visible = false;
+            AddButton.Visible = false;
+            PayCompany1.Visible = false;
+            PayingButton2.Visible = false;
+            PayCompany3.Visible = false;
+            PaymentButton4.Visible = false;
+            PayCompany5.Visible = false;
+            CompanyName3.Visible = false;
+            PaymentDue3.Visible = false;
+            PaymentCompany1.Visible = false;
+            CompanyName1.Visible = false;
+            CompanyName2.Visible = false;
+            PaymentCompany2.Visible = false;
+            Company4.Visible = false;
+            PaymentCompany4.Visible = false;
+            Company5.Visible = false;
+            PaymentCompany5.Visible = false;
+            Past4Payements.Visible = true;
+            Companypayed1.Visible = true;
+            Companypayed2.Visible = true;
+            Companypayed3.Visible = true;
+            Companypayed4.Visible = true;
+            AmountPayed1.Visible = true;
+            AmountPayed2.Visible = true;
+            AmountPayed3.Visible = true;
+            AmountPayed4.Visible = true;
+            DateAndTime1.Visible = true;
+            DateAndTime2.Visible = true;
+            DateAndTime3.Visible = true;
+            DateAndTime4.Visible = true;
+            BackButtonOnPayed.Visible = true;
+            Companypayed1.Text = "Company Name: "+ lastFew[1].Name;
+            Companypayed2.Text = "Company Name: " + lastFew[2].Name;
+            Companypayed3.Text = "Company Name: " + lastFew[3].Name;
+            Companypayed4.Text = "Company Name: " + lastFew[4].Name;
+            AmountPayed1.Text = "Payed: " + lastFew[1].Price;
+            AmountPayed2.Text = "Payed: " + lastFew[2].Price;
+            AmountPayed3.Text = "Payed: " + lastFew[3].Price;
+            AmountPayed4.Text = "Payed: " + lastFew[4].Price;
+            DateAndTime1.Text = "TimePayed: " + lastFew[1].Date;
+            DateAndTime2.Text = "TimePayed: " + lastFew[2].Date;
+            DateAndTime3.Text = "TimePayed: " + lastFew[3].Date;
+            DateAndTime4.Text = "TimePayed: " + lastFew[4].Date;
+        }
+        private void BackButtonOnPayed_Click(object sender, EventArgs e)
+        {
+            label1.Visible = true;
+            HelloLabel.Visible = true;
+            button2.Visible = true;
+            button1.Visible = true;
+            AddButton.Visible = true;
+            PayCompany1.Visible = true;
+            PayingButton2.Visible = true;
+            PayCompany3.Visible = true;
+            PaymentButton4.Visible = true;
+            PayCompany5.Visible = true;
+            CompanyName3.Visible = true;
+            PaymentDue3.Visible = true;
+            PaymentCompany1.Visible = true;
+            CompanyName1.Visible = true;
+            CompanyName2.Visible = true;
+            PaymentCompany2.Visible = true;
+            Company4.Visible = true;
+            PaymentCompany4.Visible = true;
+            Company5.Visible = true;
+            PaymentCompany5.Visible = true;
+            Past4Payements.Visible = false;
+            Companypayed1.Visible = false;
+            Companypayed2.Visible = false;
+            Companypayed3.Visible = false;
+            Companypayed4.Visible = false;
+            AmountPayed1.Visible = false;
+            AmountPayed2.Visible = false;
+            AmountPayed3.Visible = false;
+            AmountPayed4.Visible = false;
+            DateAndTime1.Visible = false;
+            DateAndTime2.Visible = false;
+            DateAndTime3.Visible = false;
+            DateAndTime4.Visible = false;
+            BackButtonOnPayed.Visible = false;
         }
     }
 }
